@@ -93,10 +93,11 @@ button {
   display: inline-flex;
   font-family: inherit;
   font-weight: 700;
+  gap: 9px;
   justify-content: center;
   min-height: 44px;
   padding: 11px 18px;
-  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, color 160ms ease;
 }
 
 .button:hover,
@@ -117,13 +118,39 @@ button:hover {
 }
 
 .button-whatsapp {
-  background: #25d366;
-  color: #10291c;
+  background: linear-gradient(135deg, #25d366, #18b957);
+  box-shadow: 0 14px 28px rgba(37, 211, 102, 0.24);
+  color: #ffffff;
 }
 
 .button-instagram {
-  background: var(--ink);
+  background: linear-gradient(135deg, #833ab4, #fd1d1d 52%, #fcb045);
+  box-shadow: 0 14px 28px rgba(201, 92, 110, 0.24);
   color: var(--white);
+}
+
+.button-whatsapp::before,
+.button-instagram::before,
+a.button[href*="wa.me"]::before,
+a.button[href*="instagram.com"]::before {
+  background: currentColor;
+  content: "";
+  display: inline-block;
+  flex: 0 0 auto;
+  height: 18px;
+  width: 18px;
+}
+
+.button-whatsapp::before,
+a.button[href*="wa.me"]::before {
+  -webkit-mask: url("icons/whatsapp.svg") center / contain no-repeat;
+  mask: url("icons/whatsapp.svg") center / contain no-repeat;
+}
+
+.button-instagram::before,
+a.button[href*="instagram.com"]::before {
+  -webkit-mask: url("icons/instagram.svg") center / contain no-repeat;
+  mask: url("icons/instagram.svg") center / contain no-repeat;
 }
 
 .hero {
