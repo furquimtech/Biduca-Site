@@ -518,8 +518,52 @@ p {
 }
 
 .footer-contact {
+  align-items: center;
   color: #f9ece8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   font-weight: 700;
+}
+
+.footer-social {
+  align-items: center;
+  display: inline-flex;
+  gap: 7px;
+}
+
+.footer-social .footer-icon {
+  background: currentColor;
+  display: inline-block;
+  height: 17px;
+  width: 17px;
+}
+
+.footer-social span {
+  margin: 0;
+}
+
+.footer-content .footer-social-whatsapp {
+  color: #7ee7a3;
+}
+
+.footer-social-whatsapp .footer-icon {
+  -webkit-mask: url("icons/whatsapp.svg") center / contain no-repeat;
+  mask: url("icons/whatsapp.svg") center / contain no-repeat;
+}
+
+.footer-content .footer-social-instagram {
+  color: #ffc0d4;
+}
+
+.footer-social-instagram .footer-icon {
+  -webkit-mask: url("icons/instagram.svg") center / contain no-repeat;
+  mask: url("icons/instagram.svg") center / contain no-repeat;
+}
+
+.footer-divider {
+  color: rgba(249, 236, 232, 0.38);
+  margin: 0 2px;
 }
 
 .footer-copy {
