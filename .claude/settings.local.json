@@ -6,7 +6,9 @@
       "PowerShell(git -C \"c:\\\\gitf\\\\BiducaSite\" commit -m \"Initial commit\")",
       "PowerShell(git -C \"c:\\\\gitf\\\\BiducaSite\" remote add origin https://github.com/furquimtech/Biduca-Site.git)",
       "PowerShell(git -C \"c:\\\\gitf\\\\BiducaSite\" branch -M main)",
-      "PowerShell(git -C \"c:\\\\gitf\\\\BiducaSite\" push -u origin main)"
+      "PowerShell(git -C \"c:\\\\gitf\\\\BiducaSite\" push -u origin main)",
+      "PowerShell(git -C \"c:\\\\gitf\\\\BiducaSite\" add assets/site.js index.html produtos.html ocasioes.html historia.html datas-comemorativas.html processo-artesanal.html contato.html)",
+      "PowerShell(git -C \"c:\\\\gitf\\\\BiducaSite\" push)"
     ]
   }
 }
